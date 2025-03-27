@@ -1,3 +1,7 @@
+package pattern.adapter;
+
+import interfaces.Device;
+
 // Legacy Door Lock Adapter: Integrates the old door lock into the modern system
 class LegacyDoorLockAdapter implements Device {
     private LegacyDoorLock legacyDoorLock; // The old door lock system

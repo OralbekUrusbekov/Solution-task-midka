@@ -1,3 +1,5 @@
+package devices;
+
 // Energy-Saving Light: A light with adjustable brightness and auto-off feature
 class EnergySavingLight extends Light {
     private int brightness; // Brightness level (0-100%)

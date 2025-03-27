@@ -1,3 +1,9 @@
+package core;
+
+import devices.Light;
+import devices.Thermostat;
+import interfaces.Device;
+
 import java.util.ArrayList;
 import java.util.List;
 

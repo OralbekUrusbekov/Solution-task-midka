@@ -1,9 +1,13 @@
-// ScheduledDevice: A decorator that adds scheduling functionality to a device
-class ScheduledDevice extends DeviceDecorator {
+package pattern.decorator;
+
+import interfaces.Device;
+
+// pattern.decorator.ScheduledOperationDecorator: A decorator that adds scheduling functionality to a device
+class ScheduledOperationDecorator extends SmartDeviceDecorator {
     private String schedule; // The time schedule for turning the device on/off
 
-    public ScheduledDevice(Device device, String schedule) {
-        super(device); // Call the constructor of the base decorator
+    public ScheduledOperationDecorator(Device decoratedDevice, String schedule) {
+        super(decoratedDevice); // Call the constructor of the base decorator
         this.schedule = schedule;
     }
 

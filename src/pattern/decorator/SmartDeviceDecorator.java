@@ -1,4 +1,8 @@
-// SmartDeviceDecorator: The base decorator class for adding functionality to devices
+package pattern.decorator;
+
+import interfaces.Device;
+
+// pattern.decorator.SmartDeviceDecorator: The base decorator class for adding functionality to devices
 abstract class SmartDeviceDecorator implements Device {
     protected Device decoratedDevice; // The wrapped device
 

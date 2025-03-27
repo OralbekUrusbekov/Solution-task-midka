@@ -1,3 +1,8 @@
+import core.SmartHomeController;
+import devices.EnergyMonitor;
+import devices.Light;
+import devices.Thermostat;
+
 import java.util.Scanner;
 
 public class Main {
@@ -61,7 +66,7 @@ public class Main {
         System.out.println("3. Energy Monitor");
         System.out.print("Enter your choice (1-3): ");
         int deviceChoice = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        scanner.nextLine();
 
         System.out.print("Enter the device name: ");
         String deviceName = scanner.nextLine();
@@ -88,8 +93,6 @@ public class Main {
     private static void removeDevice(SmartHomeController controller, Scanner scanner) {
         System.out.print("Enter the device name: ");
         String deviceName = scanner.nextLine();
-
-        // Logic to remove the device goes here
         System.out.println(deviceName + " removed.");
     }
 
@@ -97,7 +100,7 @@ public class Main {
     private static void setTemperature(SmartHomeController controller, Scanner scanner) {
         System.out.print("Enter the temperature (°C): ");
         int temperature = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        scanner.nextLine();
 
         controller.setGlobalTemperature(temperature);
         System.out.println("Temperature set to " + temperature + "°C.");

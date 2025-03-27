@@ -1,4 +1,6 @@
-// OldDoorLock: Represents a legacy door lock system
+package pattern.adapter;
+
+// pattern.adapter.OldDoorLock: Represents a legacy door lock system
 class OldDoorLock {
     public void lock(){
         System.out.println("Old door look is locked");

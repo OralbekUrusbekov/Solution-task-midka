@@ -1,3 +1,7 @@
+package utils;
+
+import devices.EnergyMonitor;
+
 import java.util.ArrayList;
 import java.util.List;
 

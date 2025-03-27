@@ -1,3 +1,7 @@
+package pattern.decorator;
+
+import interfaces.Device;
+
 // Base Decorator Class
 abstract class DeviceDecorator implements Device {
     protected Device device; // The decorated device

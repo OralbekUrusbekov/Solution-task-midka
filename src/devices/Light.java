@@ -1,5 +1,7 @@
+package devices;
+import interfaces.Device;
 // Light: Represents a light device
-class Light implements Device {
+public class Light implements Device {
     private String name; // Name of the light
     private boolean isOn; // Current state of the light (on/off)
 

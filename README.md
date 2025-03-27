@@ -36,11 +36,11 @@ The project implements the following design patterns:
 
 1. Composite Pattern:
     - Manages groups of devices (e.g., rooms) as a single entity.
-    - Example: A Room can contain multiple devices like lights and thermostats.
+    - Example: A pattern.composite.Room can contain multiple devices like lights and thermostats.
 
 2. Decorator Pattern:
     - Adds additional functionality to devices dynamically.
-    - Example: ScheduledDevice adds scheduling capabilities to lights.
+    - Example: pattern.decorator.ScheduledDevice adds scheduling capabilities to lights.
 
 3. Facade Pattern:
     - Provides a simplified interface to manage all devices.
@@ -48,7 +48,7 @@ The project implements the following design patterns:
 
 4. Adapter Pattern:
     - Integrates legacy systems into the modern smart home system.
-    - Example: LegacyDoorLockAdapter allows an old door lock to work with the system.
+    - Example: pattern.adapter.LegacyDoorLockAdapter allows an old door lock to work with the system.
 
 5. Interface Pattern:
     - Ensures all devices follow a consistent structure and behavior.
@@ -107,7 +107,7 @@ What would you like to do?
     - 1 for Light.
     - 2 for Thermostat.
     - 3 for Energy Monitor.
-3. Enter the device name (e.g., "Living Room Light").
+3. Enter the device name (e.g., "Living pattern.composite.Room Light").
 
 ### Turning On All Lights
 1. Select option 3 (Turn on all lights).

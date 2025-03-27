@@ -1,7 +1,15 @@
+package core;
+
+import devices.EnergyMonitor;
+import devices.Light;
+import devices.Thermostat;
+import interfaces.Device;
+import pattern.composite.Room;
+
 import java.util.ArrayList;
 import java.util.List;
 
-class SmartHomeController {
+public class SmartHomeController {
     private List<Device> devices = new ArrayList<>(); // List of all devices
 
     // Add a device to the system
@@ -18,6 +26,8 @@ class SmartHomeController {
             }
         }
     }
+
+
 
     // Turn off all lights in the system
     public void turnAllLightsOff() {
@@ -47,4 +57,6 @@ class SmartHomeController {
         }
         return report.toString();
     }
+
+
 }

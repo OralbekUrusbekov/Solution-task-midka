@@ -1,5 +1,9 @@
+package devices;
+
+import interfaces.Device;
+
 // Thermostat: Represents a thermostat device
-class Thermostat implements Device {
+public class Thermostat implements Device {
     private String name; // Name of the thermostat
     private int temperature; // Current temperature
 

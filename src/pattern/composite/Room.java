@@ -1,13 +1,25 @@
+package pattern.composite;
+
+import interfaces.Device;
+
 import java.util.ArrayList;
 import java.util.List;
 
-// Room: Represents a group of devices (Composite Pattern)
-class Room implements Device {
+// pattern.composite.Room: Represents a group of devices (Composite Pattern)
+public class Room implements Device {
     private String name; // Name of the room
     private List<Device> devices = new ArrayList<>(); // List of devices in the room
 
     public Room(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Device> getDevices() {
+        return devices;
     }
 
     // Add a device to the room

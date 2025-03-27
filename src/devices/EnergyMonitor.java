@@ -1,5 +1,9 @@
+package devices;
+
+import interfaces.Device;
+
 // Energy Monitor (Leaf Class)
-class EnergyMonitor implements Device {
+public class EnergyMonitor implements Device {
     private String name; // Name of the energy monitor
     private double energyConsumption; // Energy consumption in watts
 

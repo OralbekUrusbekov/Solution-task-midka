@@ -1,3 +1,5 @@
+package pattern.adapter;
+
 // Legacy Door Lock: Represents an old door lock system
 class LegacyDoorLock {
     public void lock() {

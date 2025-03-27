@@ -1,3 +1,7 @@
+package pattern.adapter;
+
+import interfaces.Device;
+
 // Adapter: Integrates an old system into the modern system
 class DoorLockAdapter implements Device {
     private OldDoorLock oldLock; // The old door lock system
@@ -16,7 +20,7 @@ class DoorLockAdapter implements Device {
     @Override
     public void turnOff() {
         oldLock.lock(); // Locks the old door lock
-        bool = true
+        bool = true;
     }
 
     @Override
